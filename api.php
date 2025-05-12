@@ -55,7 +55,7 @@ if (preg_match("/[\r\n]/", $email)) {
 }
 
 // Costruisci il messaggio email
-$to = "more@xdeman.eu"; // Sostituisci con la tua email reale
+$to = "info@xdeman.eu"; // Sostituisci con la tua email reale
 $fullMessage = "Cliente: $name $surname\n\nMessaggio:\n$message";
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
@@ -68,4 +68,3 @@ if (mail($to, $subject, $fullMessage, $headers)) {
 	http_response_code(500);
 	echo json_encode(['error' => 'Errore nell\'invio della mail']);
 }
-?>
