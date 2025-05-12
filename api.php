@@ -1,6 +1,6 @@
 <?php
 // Imposta le intestazioni per CORS e JSON
-header("Access-Control-Allow-Origin: *"); // Sostituisci * con il dominio specifico in produzione
+header("Access-Control-Allow-Origin: https://www.xdeman.eu/");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
