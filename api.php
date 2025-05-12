@@ -57,7 +57,8 @@ if (preg_match("/[\r\n]/", $email)) {
 // Costruisci il messaggio email
 $to = "info_more@xdeman.eu"; // Sostituisci con la tua email reale
 $fullMessage = "Cliente: $name $surname\n\nMessaggio:\n$message";
-$headers = "From: $email\r\n";
+$from = "noreply@xdeman.eu";
+$headers = "From: $from\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8";
 
